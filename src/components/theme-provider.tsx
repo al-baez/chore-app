@@ -8,7 +8,7 @@ export function ThemeProvider({
   ...props
 }: { 
   children: React.ReactNode 
-} & Record<string, any>) {
+} & Record<string, unknown>) {
   const [mounted, setMounted] = React.useState(false)
   
   // Only show UI once the component has mounted to avoid hydration mismatch

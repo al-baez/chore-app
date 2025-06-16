@@ -1,6 +1,6 @@
 import { supabase } from "./supabase";
 import { Chore, ChoreLog, Partner, DailyScore, WeeklyScore, MonthlyScore } from "@/types";
-import { startOfWeek, format, addDays, parseISO, isSameDay, isSameWeek, isSameMonth } from "date-fns";
+import { startOfWeek, format, addDays, parseISO, isSameWeek, isSameMonth } from "date-fns";
 
 // Database types that match Supabase schema
 interface DbChore {

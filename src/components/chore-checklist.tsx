@@ -66,7 +66,7 @@ export default function ChoreChecklist({
     setCompletedChores(prev => ({
       ...prev,
       ...Object.entries(pendingChores)
-        .filter(([_, isChecked]) => isChecked)
+        .filter(([, isChecked]) => isChecked)
         .reduce((acc, [id]) => {
           acc[id] = true;
           return acc;
