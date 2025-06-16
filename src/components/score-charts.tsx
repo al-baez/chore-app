@@ -133,7 +133,7 @@ export default function ScoreCharts({ weeklyScores, monthlyScores }: ScoreCharts
                     <YAxis />
                     <Tooltip 
                       formatter={(value, name) => [value, name === "partner1Score" ? "Partner 1" : "Partner 2"]}
-                      labelFormatter={(label, items) => {
+                      labelFormatter={(label) => {
                         const item = filteredWeeklyScores.find(s => s.week === label);
                         return item ? `Week of ${item.weekFull}` : label;
                       }}
@@ -219,7 +219,7 @@ export default function ScoreCharts({ weeklyScores, monthlyScores }: ScoreCharts
                     <YAxis />
                     <Tooltip 
                       formatter={(value, name) => [value, name === "partner1Score" ? "Partner 1" : "Partner 2"]}
-                      labelFormatter={(label, items) => {
+                      labelFormatter={(label) => {
                         const item = filteredMonthlyScores.find(s => s.monthLabel === label);
                         return item ? item.monthFull : label;
                       }}

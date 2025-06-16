@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { format, addDays, subDays, parseISO } from "date-fns";
-import { Chore, ChoreLog, Partner, WeeklyScore, MonthlyScore } from "@/types";
+import { Chore, Partner, WeeklyScore, MonthlyScore } from "@/types";
 
 // Automatically detect which data service to use
 const useSupabase = !!(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);

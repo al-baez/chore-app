@@ -1,5 +1,5 @@
 import { Chore, ChoreLog, Partner, DailyScore, WeeklyScore, MonthlyScore } from "@/types";
-import { startOfWeek, startOfMonth, format, addDays, parseISO, isSameDay, isSameWeek, isSameMonth } from "date-fns";
+import { startOfWeek, format, addDays, parseISO, isSameDay, isSameWeek, isSameMonth } from "date-fns";
 
 // Initial chores data
 const initialChores: Chore[] = [
